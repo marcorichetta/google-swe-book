@@ -3,6 +3,9 @@
 This repository contains the book [Software Engineering at Google](https://abseil.io/resources/swe-book) to be read on a Kindle.
 Not the ideal result but _it's something_.
 
+> **Note**
+> Maybe there is a way to tell `pandoc` to recursively read everything in a URL and convert it to an epub. If you know how to do it, contribute and claim your 🍺!
+
 ## Setup
 
 ### Requirements
