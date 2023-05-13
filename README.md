@@ -6,7 +6,12 @@ Not the ideal result but _it's something_.
 > **Note**
 > Maybe there is a way to tell `pandoc` to recursively read everything in a URL and convert it to an epub. If you know how to do it, contribute and claim your 🍺!
 
-## Setup
+## Downloads
+
+-   [AZW3 (Kindle)](https://github.com/marcorichetta/google-swe-book/raw/main/Software%20Engineering%20at%20Google_%20Lessons%20Le%20-%20Titus%20Winters.azw3)
+-   [EPUB](https://github.com/marcorichetta/google-swe-book/raw/main/Software%20Engineering%20at%20Google_%20Lessons%20Le%20-%20Titus%20Winters.epub)
+
+## How I did it
 
 ### Requirements
 
