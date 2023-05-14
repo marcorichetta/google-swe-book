@@ -8,8 +8,8 @@ Not the ideal result but _it's something_.
 
 ## Downloads
 
--   [AZW3 (Kindle)](https://github.com/marcorichetta/google-swe-book/raw/main/Software%20Engineering%20at%20Google_%20Lessons%20Le%20-%20Titus%20Winters.azw3)
--   [EPUB](https://github.com/marcorichetta/google-swe-book/raw/main/Software%20Engineering%20at%20Google_%20Lessons%20Le%20-%20Titus%20Winters.epub)
+-   [AZW3](https://github.com/marcorichetta/google-swe-book/raw/main/Software_Engineering_at_Google.azw3)
+-   [EPUB](https://github.com/marcorichetta/google-swe-book/raw/main/Software_Engineering_at_Google.epub)
 
 ## How I did it
 
@@ -53,9 +53,12 @@ Not the ideal result but _it's something_.
 
 5.  Use `pandoc` to download the book index with the [--embed-resources](https://pandoc.org/MANUAL.html#option--embed-resources) option so that the result is _self-contained_ . Possibly it can be done with `wget`
 
+> **Note**
+> Noted the index was a bit wrong so I copied it from the [website](https://abseil.io/resources/swe-book/html/toc.html) (everything inside `<nav>`) and pasted into [index.html](index.html).
+
     ```shell
-    docker run --rm --volume "`pwd`:/data" --user `id -u`:`id -g` pandoc/latex -s -f html https://abseil.io/resources/swe- book/html/toc.html -t html --embed-resources -o index.html
+    docker run --rm --volume "`pwd`:/data" --user `id -u`:`id -g` pandoc/latex -s -f html https://abseil.io/resources/swe-book/html/toc.html -t html --embed-resources -o index.html
     ```
 
-6.  Moved the `index.html` file along with the chapters to `abseil.io/resources/swe-book/html/`
+6.  Moved the `index.html` file along with the chapters to `/abseil.io/resources/swe-book/html/`
 7.  Using Calibre, I added a book, selected the `index.html` file and converted it to EPUB and from there to AZW3.
